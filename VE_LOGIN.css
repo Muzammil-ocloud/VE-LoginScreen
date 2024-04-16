@@ -21,6 +21,7 @@ html {
   width: 790px;
   color: #fff;
   text-align: center;
+  justify-content: center;
 }
 
 .login-title {
@@ -51,6 +52,7 @@ html {
   color: #fff;
   text-transform: uppercase;
   padding-left: 20px;
+  margin-left: 21px;
 }
 ::placeholder {
   color: white;
@@ -74,7 +76,7 @@ img {
 }
 .button1 {
   height: 4em;
-  width: 29.4%;
+  width: 29.7%;
   border-radius: 30px;
   transition: background-color 0.5s ease-in 0.3s;
 
@@ -82,6 +84,7 @@ img {
   border: 2px solid grey;
   color: #fff;
   text-transform: uppercase;
+  margin-left: 20px;
 }
 
 .button1:active {
@@ -91,7 +94,7 @@ img {
 .button2 {
   height: 4em;
   opacity: 0.6;
-  width: 29.4%;
+  width: 29.5%;
   border-radius: 30px;
   text-transform: uppercase;
   border: 2px solid linear-gradient(#75838b, #3b4246);
@@ -109,7 +112,20 @@ footer {
   text-align: center;
   font-size: 1.2em;
 }
-@media all and (max-width: 800px) and (min-width: 630px) {
+@media all and (max-width: 800px) and (min-width: 720px) {
+  .div {
+    height: 350px;
+    width: 700px;
+  }
+  .fp {
+    display: none;
+  }
+
+  .button1 {
+    margin-left: -7px;
+  }
+}
+@media all and (max-width: 719px) and (min-width: 630px) {
   .div {
     height: 350px;
     width: 600px;
@@ -119,7 +135,13 @@ footer {
   }
 
   .button1 {
-    margin-left: -20px;
+    margin-left: -7px;
+  }
+  .login-title {
+    font-size: 2.5em;
+  }
+  .login-text {
+    font-size: 1.5em;
   }
 }
 
@@ -144,7 +166,7 @@ footer {
     display: none;
   }
   .button1 {
-    margin-left: -20px;
+    margin-left: -7px;
   }
 }
 @media all and (max-width: 469px) and (min-width: 380px) {
@@ -174,7 +196,7 @@ footer {
     display: none;
   }
   .button1 {
-    margin-left: -20px;
+    margin-left: -7px;
   }
 }
 @media all and (max-width: 379px) {
@@ -204,15 +226,48 @@ footer {
     display: none;
   }
   .button1 {
-    margin-left: -20px;
+    margin-left: -7px;
+  }
+}
+@media all and (max-width: 320px) {
+  .div {
+    height: 230px;
+    width: 250px;
+  }
+  .login-title {
+    font-size: 1.4em;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .login-text {
+    font-size: 0.85em;
+    letter-spacing: 0.03em;
+    font-weight: 450;
+  }
+  .button1 {
+    font-size: 9px;
+  }
+  .button2 {
+    font-size: 9px;
+  }
+  .fp {
+    display: none;
+  }
+  .button1 {
+    margin-left: -7px;
+  }
+  ::placeholder {
+    font-size: 0.9em;
   }
 }
 .fp {
-  height: 18px;
-  width: 18px;
+  height: 15px;
+  width: 15px;
   position: relative;
-  top: 24px;
-  right: 95px;
+  top: 19px;
+  right: 52px;
   filter: brightness(0) invert(1);
   opacity: 0.6;
 }
