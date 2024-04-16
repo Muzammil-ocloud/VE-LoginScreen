@@ -74,7 +74,7 @@ img {
 }
 .button1 {
   height: 4em;
-  width: 30%;
+  width: 29.4%;
   border-radius: 30px;
   transition: background-color 0.5s ease-in 0.3s;
 
@@ -91,7 +91,7 @@ img {
 .button2 {
   height: 4em;
   opacity: 0.6;
-  width: 30%;
+  width: 29.4%;
   border-radius: 30px;
   text-transform: uppercase;
   border: 2px solid linear-gradient(#75838b, #3b4246);
@@ -117,6 +117,7 @@ footer {
   .fp {
     display: none;
   }
+
   .button1 {
     margin-left: -20px;
   }
@@ -146,10 +147,40 @@ footer {
     margin-left: -20px;
   }
 }
-@media all and (max-width: 469px) {
+@media all and (max-width: 469px) and (min-width: 380px) {
   .div {
     height: 270px;
     width: 335px;
+  }
+  .login-title {
+    font-size: 1.5em;
+    letter-spacing: 0.03em;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 500;
+  }
+  .login-text {
+    font-size: 1em;
+    letter-spacing: 0.03em;
+    font-weight: 450;
+  }
+  .button1 {
+    font-size: 12px;
+  }
+  .button2 {
+    font-size: 12px;
+  }
+  .fp {
+    display: none;
+  }
+  .button1 {
+    margin-left: -20px;
+  }
+}
+@media all and (max-width: 379px) {
+  .div {
+    height: 250px;
+    width: 300px;
   }
   .login-title {
     font-size: 1.5em;

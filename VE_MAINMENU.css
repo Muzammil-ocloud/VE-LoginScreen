@@ -38,18 +38,26 @@ html {
 .nav21 {
   height: 2em;
   width: 8em;
-  background-color: rgb(61, 59, 59);
+  background-color: #35515d;
   border-radius: 20px;
   text-align: center;
 }
+.nav21:hover {
+  cursor: pointer;
+}
+
 .nav22 {
   height: 2em;
   width: 6em;
-  background-color: rgb(61, 59, 59);
-  margin-left: 20px;
+  background-color: #35515d;
+  margin-left: 15px;
   border-radius: 20px;
   text-align: center;
 }
+.nav22:hover {
+  cursor: pointer;
+}
+
 .navText {
   position: relative;
   top: 3px;
@@ -63,6 +71,9 @@ html {
   color: white;
   text-transform: uppercase;
   font-size: 0.8rem;
+}
+.navText2:hover {
+  cursor: pointer;
 }
 .navImg2 {
   position: relative;
@@ -89,32 +100,65 @@ h4 {
   flex-direction: row;
   justify-content: center;
   margin-top: 70px;
-  gap: 1.5em;
-  width: 100%;
+  gap: 1em;
   flex-wrap: wrap;
+  padding-bottom: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .cards {
   position: absolute;
-  top: 30%;
-  left: 24%;
+  top: 20%;
+  left: 25%;
 }
 .cards1 {
   position: absolute;
-  top: 42%;
-  left: 38%;
+  top: 32.5%;
+  left: 39.5%;
 }
 .cards2 {
   position: absolute;
-  top: 40%;
-  left: 40%;
+  top: 30%;
+  left: 43%;
 }
 .cards3 {
   position: absolute;
-  top: 42%;
-  left: 43%;
+  top: 34%;
+  left: 46%;
+}
+.cards:hover,
+.cards1:hover,
+.cards2:hover,
+.cards3:hover {
+  cursor: pointer;
 }
 
-@media all and (max-width: 580px) {
+.cardText {
+  color: white;
+  text-transform: uppercase;
+  font-size: 38px;
+  position: absolute;
+  top: 77%;
+  left: 11%;
+}
+.cardText2 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 38px;
+  position: absolute;
+  top: 77%;
+  left: 4%;
+}
+.cardText3 {
+  color: white;
+  text-transform: uppercase;
+  font-size: 38px;
+  position: absolute;
+  top: 77%;
+  left: 5.5%;
+}
+
+@media all and (max-width: 630px) and (min-width: 530px) {
   .navText {
     font-size: 0.7rem;
   }
@@ -127,14 +171,130 @@ h4 {
     gap: 20px;
   }
   .navImg2 {
-    left: 10px;
-    bottom: 65px;
+    position: absolute;
+    top: 60px;
+    left: 40%;
   }
   .navText2 {
-    left: 10px;
-    bottom: 85px;
+    left: 18px;
+    bottom: 63px;
   }
-  .nav22 {
-    height: 3em;
+
+  .navImage1 {
+    position: relative;
+    bottom: 50px;
+  }
+  h4 {
+    padding-top: 80px;
+  }
+  .nav21 {
+    margin-left: 16px;
+  }
+}
+@media all and (max-width: 549px) and (min-width: 490px) {
+  .navText {
+    font-size: 0.7rem;
+  }
+  .navText2 {
+    font-size: 0.7rem;
+  }
+
+  .nav2 {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .navImg2 {
+    position: absolute;
+    top: 60px;
+    left: 39%;
+  }
+  .navText2 {
+    left: 18px;
+    bottom: 63px;
+  }
+
+  .navImage1 {
+    position: relative;
+    bottom: 50px;
+  }
+  h4 {
+    padding-top: 80px;
+  }
+  .nav21 {
+    margin-left: 16px;
+  }
+}
+@media all and (max-width: 489px) and (min-width: 360px) {
+  .navText {
+    font-size: 0.7rem;
+  }
+  .navText2 {
+    font-size: 0.7rem;
+  }
+
+  .nav2 {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .navImg2 {
+    position: absolute;
+    top: 60px;
+    left: 36%;
+  }
+  .navText2 {
+    left: 18px;
+    bottom: 63px;
+  }
+
+  .navImage1 {
+    position: relative;
+    bottom: 50px;
+  }
+  h4 {
+    padding-top: 80px;
+  }
+  .navImage1 {
+    transform: scale(0.8);
+    margin-left: 1.2rem;
+  }
+  .nav21 {
+    margin-left: 16px;
+  }
+}
+@media all and (max-width: 359px) {
+  .navText {
+    font-size: 0.7rem;
+  }
+  .navText2 {
+    font-size: 0.7rem;
+  }
+
+  .nav2 {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .navImg2 {
+    position: absolute;
+    top: 60px;
+    left: 34%;
+  }
+  .navText2 {
+    left: 18px;
+    bottom: 63px;
+  }
+
+  .navImage1 {
+    position: relative;
+    bottom: 50px;
+  }
+  h4 {
+    padding-top: 80px;
+  }
+  .navImage1 {
+    transform: scale(0.8);
+    margin-left: 1.2rem;
+  }
+  .nav21 {
+    margin-left: 16px;
   }
 }
